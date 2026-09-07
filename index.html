@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">✈ Wanderly</div>
+        <nav>
+            <a href="#home">Discover</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#stays">Stays</a>
+            <a href="#experiences">Experiences</a>
+        </nav>
+        <div class="header-right">
+            <span class="search-icon">⌕</span>
+            <a href="#">List your property</a>
+            <button class="sign-btn">Sign In</button>
+        </div>
+        <button class="menu-btn" onclick="openMenu()">☰</button>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" onclick="closeMenu()">✕</button>
+        <a href="#home" onclick="closeMenu()">Discover</a>
+        <a href="#destinations" onclick="closeMenu()">Destinations</a>
+        <a href="#stays" onclick="closeMenu()">Stays</a>
+        <a href="#experiences" onclick="closeMenu()">Experiences</a>
+        <input type="text" placeholder="Search">
+        <button class="mobile-sign">Sign In</button>
+    </div>
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Discover the Extraordinary</h1>
+            <p>
+                Curated journeys for the sophisticated explorer
+            </p>
+
+        </div>
+        <div class="search-box">
+            <div class="search-item">
+                <span>📍</span>
+                <div>
+                    <b>Where</b>
+                    <small>Search destination</small>
+                </div>
+            </div>
+            <div class="search-item">
+                <span>🏠</span>
+                <div>
+                    <b>Trip type</b>
+                    <small>Choose type</small>
+                </div>
+            </div>
+            <div class="search-item">
+                <span>📅</span>
+                <div>
+                    <b>Dates</b>
+                    <small>Add dates</small>
+                </div>
+            </div>
+            <div class="search-item">
+                <span>👤</span>
+                <div>
+                    <b>Guests</b>
+                    <small>Add guests</small>
+                </div>
+            </div>
+            <button class="search-btn">
+                Search
+            </button>
+        </div>
+    </section>
+    <section class="stats">
+        <div>
+            <strong>500+</strong>
+            <span>Destinations</span>
+        </div>
+        <div>
+            <strong>4.9</strong>
+            <span>Average Rating</span>
+        </div>
+        <div>
+            <strong>4.7+</strong>
+            <span>Top Rated</span>
+        </div>
+        <div>
+            <strong>10K+</strong>
+            <span>Happy Travelers</span>
+        </div>
+    </section>
+    <section class="section" id="destinations">
+        <div class="heading">
+            <div>
+                <h2>Popular Destinations</h2>
+                <p>
+                    Curated favorites for the unforgettable explorer
+                </p>
+            </div>
+            <a href="#">View all →</a>
+        </div>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                    alt="Amalfi Coast">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Amalfi Coast</h3>
+                        <span>★ 4.8</span>
+                    </div>
+                    <p>Italy</p>
+                    <div class="card-bottom">
+                        <span>From $149</span>
+                        <span>Explore →</span>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff"
+                    alt="Kyoto">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Kyoto</h3>
+                        <span>★ 4.9</span>
+                    </div>
+                    <p>Japan</p>
+                    <div class="card-bottom">
+                        <span>From $120</span>
+                        <span>Explore →</span>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1540541338287-41700207dee6"
+                    alt="Swiss Alps">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Swiss Alps</h3>
+                        <span>★ 4.9</span>
+                    </div>
+                    <p>Switzerland</p>
+                    <div class="card-bottom">
+                        <span>From $180</span>
+                        <span>Explore →</span>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7"
+                    alt="Santorini">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Santorini</h3>
+                        <span>★ 4.8</span>
+                    </div>
+                    <p>Greece</p>
+                    <div class="card-bottom">
+                        <span>From $160</span>
+                        <span>Explore →</span>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                    alt="Fiji">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Fiji</h3>
+                        <span>★ 4.7</span>
+                    </div>
+                    <p>Fiji</p>
+                    <div class="card-bottom">
+                        <span>From $130</span>
+                        <span>Explore →</span>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+                    alt="Patagonia">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Patagonia</h3>
+                        <span>★ 4.8</span>
+                    </div>
+                    <p>Argentina</p>
+                    <div class="card-bottom">
+                        <span>From $200</span>
+                        <span>Explore →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why section" id="experiences">
+        <h2>Why Wanderly?</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="icon">♡</div>
+                <h3>Curated Experiences</h3>
+                <p>
+                    Handpicked experiences made specially for you.
+                </p>
+            </div>
+            <div class="feature">
+                <div class="icon">♧</div>
+                <h3>Local Expertise</h3>
+                <p>
+                    Discover places with recommendations from locals.
+                </p>
+            </div>
+            <div class="feature">
+                <div class="icon">▣</div>
+                <h3>Flexible Booking</h3>
+                <p>
+                    Simple and flexible booking for your next adventure.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="stays">
+        <div class="heading">
+            <div>
+                <h2>Featured Escapes</h2>
+                <p>
+                    Find your next unforgettable adventure
+                </p>
+            </div>
+        </div>
+        <div class="offers">
+            <div class="offer">
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                    alt="Summer Escape">
+                <div class="offer-text">
+                    <h3>Summer Escape</h3>
+                    <p>
+                        Discover beautiful beaches
+                    </p>
+                    <button>
+                        Explore →
+                    </button>
+                </div>
+            </div>
+            <div class="offer">
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+                    alt="Winter Retreat">
+                <div class="offer-text">
+                    <h3>Winter Retreat</h3>
+                    <p>
+                        Escape to peaceful mountains
+                    </p>
+                    <button>
+                        Explore →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials section">
+        <h2>What Travelers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>
+                    "Wanderly made our trip so easy.
+                    Everything was beautifully planned."
+                </p>
+                <strong>
+                    — Ananya, India
+                </strong>
+            </div>
+            <div class="testimonial">
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>
+                    "Amazing destinations and excellent
+                    recommendations. Loved the experience."
+                </p>
+                <strong>
+                    — Rohan, India
+                </strong>
+            </div>
+            <div class="testimonial">
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>
+                    "A simple and beautiful way to
+                    discover new places."
+                </p>
+                <strong>
+                    — Priya, India
+                </strong>
+            </div>
+        </div>
+
+    </section>
+    <section class="newsletter">
+        <h2>
+            Never miss an adventure
+        </h2>
+        <p>
+            Sign up for travel inspiration and exclusive offers.
+        </p>
+        <form id="newsletterForm">
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required>
+            <button type="submit">
+                Subscribe
+            </button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-about">
+            <h2>Wanderly</h2>
+            <p>
+                Explore the world, discover extraordinary
+                places and create unforgettable memories.
+            </p>
+            <div class="socials">
+                <span>f</span>
+                <span>◎</span>
+                <span>𝕏</span>
+                <span>▶</span>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="#destinations">Destinations</a>
+            <a href="#stays">Stays</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#">Travel Guides</a>
+        </div>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-column">
+            <h3>Support</h3>
+            <a href="#">Help Center</a>
+            <a href="#">FAQs</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+        </div>
+    </footer>
+    <div class="copyright">
+        © 2026 Wanderly. All rights reserved.
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
